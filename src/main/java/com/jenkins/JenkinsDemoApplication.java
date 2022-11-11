@@ -13,12 +13,17 @@ public class JenkinsDemoApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		Logger.info("This is a CI job");
+		
 		SpringApplication.run(JenkinsDemoApplication.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
 		Logger.info("this is the second task of this build");
+
+	}
+	public void run2(String... args) throws Exception {
+		Logger.info("this is the third task of this build");
 
 	}
 
