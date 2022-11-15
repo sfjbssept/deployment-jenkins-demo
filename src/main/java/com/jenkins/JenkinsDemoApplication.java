@@ -26,5 +26,11 @@ public class JenkinsDemoApplication implements CommandLineRunner {
 		Logger.info("this is the third task of this build");
 
 	}
+	
+	public void run3(String... args) throws Exception {
+		Logger.info("this is the fourth task of this build");
+
+	}
+	
 
 }
